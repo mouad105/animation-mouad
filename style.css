@@ -1,6 +1,5 @@
 body{
-
-    background-color: black;
+    background-color: #212121;
 }
 .container{
     width: 100%;
@@ -24,6 +23,7 @@ body{
     letter-spacing: 4px;
     transform: rotate(360deg);
     animation: animate 3s linear infinite;
+ 
 }
 
 @keyframes animate{
@@ -43,13 +43,14 @@ body{
 }
 
 
-img{
+.img{
    width: 100px;
    height: 100px; 
    animation-name: spt;
-   animation-duration: 4s;
-   animation-delay: 2s;
+   animation-duration: 15s;
+   animation-delay: 1s;
    animation-iteration-count: infinite;
+   animation-timing-function: ease;
 }
     @keyframes spt {
         0%{
@@ -57,7 +58,7 @@ img{
             rotate: 0deg;
         }
         100%{
-            translate: 2000px 0px;
+            translate: 1800px 0px;
             rotate: 360deg;
         }
     }
@@ -70,4 +71,33 @@ img{
     text-decoration: underline;
     text-align: center;
     font-size: xx-large;
+}
+
+.upt{
+    height: 40px;
+    width: 1850px;
+    animation: upt 15s  ease infinite 1s ;
+  
+    animation-name: upt;
+}
+
+@keyframes upt {
+    0%{
+        width: 0;
+        background-color: aliceblue;
+        
+    }
+    25%{
+        width: 50;
+    }
+    50%{
+        width: 75;
+    }
+    75%{
+        width: 85;
+    }
+    100%{
+        width: 100;
+        background-color: #1db954;
+    }
 }
